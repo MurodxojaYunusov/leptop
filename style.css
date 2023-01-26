@@ -1,0 +1,42 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: orange;
+
+}
+.box
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    background-color: blue;
+    box-shadow: 0 0 10px blue;
+    border-radius:  50% 100px 200px;
+    animation: box 3s linear infinite;
+}
+@keyframes box
+{
+    50%
+    {
+        transform: translate(500px) rotate(180deg);
+        top: 50%;
+        scale: 2;
+        
+    }
+    100%
+    {
+        transform: translate(1000px);
+        top: 50%;
+        
+        
+    }
+}
